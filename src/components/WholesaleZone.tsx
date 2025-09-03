@@ -105,7 +105,7 @@ export default function WholesaleZone() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (!validateForm()) {
       const firstError = Object.keys(errors)[0];
       const errorElement = document.getElementById(firstError);
@@ -120,10 +120,10 @@ export default function WholesaleZone() {
     try {
       // Simulate API call
       await new Promise(resolve => setTimeout(resolve, 2000));
-      
+
       setShowSuccess(true);
       toast.success("Partnership application received! We'll contact you within 24 hours.");
-      
+
       // Clear form
       setFormData({
         businessName: "",
@@ -144,7 +144,7 @@ export default function WholesaleZone() {
 
   const handleSamplePackSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (!validateSamplePackForm()) {
       return;
     }
@@ -154,10 +154,10 @@ export default function WholesaleZone() {
     try {
       // Simulate API call
       await new Promise(resolve => setTimeout(resolve, 1500));
-      
+
       setShowSamplePackSuccess(true);
       toast.success("Sample pack request received! We'll ship it within 2-3 business days.");
-      
+
       // Clear sample pack form
       setSamplePackData({
         name: "",
@@ -173,7 +173,7 @@ export default function WholesaleZone() {
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value, type } = e.target;
-    
+
     if (type === 'checkbox') {
       const checkbox = e.target as HTMLInputElement;
       setFormData(prev => ({
@@ -186,7 +186,7 @@ export default function WholesaleZone() {
         [name]: value
       }));
     }
-    
+
     // Clear error when user starts typing
     if (errors[name]) {
       setErrors(prev => ({
@@ -202,7 +202,7 @@ export default function WholesaleZone() {
       ...prev,
       [name]: value
     }));
-    
+
     // Clear error when user starts typing
     if (samplePackErrors[name]) {
       setSamplePackErrors(prev => ({
@@ -270,6 +270,31 @@ export default function WholesaleZone() {
                       <td className="px-4 py-3 font-semibold text-golden">₹4,200</td>
                       <td className="px-4 py-3 text-basil font-medium">₹1,600</td>
                     </tr>
+                    <tr>
+                      <td className="px-4 py-3 font-medium text-brown">25kg Bulk</td>
+                      <td className="px-4 py-3 text-muted-foreground">₹7,250</td>
+                      <td className="px-4 py-3 font-semibold text-golden">₹5,250</td>
+                      <td className="px-4 py-3 text-basil font-medium">₹2,000</td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-3 font-medium text-brown">30kg Bulk</td>
+                      <td className="px-4 py-3 text-muted-foreground">₹8,700</td>
+                      <td className="px-4 py-3 font-semibold text-golden">₹6,200</td>
+                      <td className="px-4 py-3 text-basil font-medium">₹2,500</td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-3 font-medium text-brown">50kg Bulk</td>
+                      <td className="px-4 py-3 text-muted-foreground">₹14,000</td>
+                      <td className="px-4 py-3 font-semibold text-golden">₹9,500</td>
+                      <td className="px-4 py-3 text-basil font-medium">₹4,500</td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-3 font-medium text-brown">75kg Bulk</td>
+                      <td className="px-4 py-3 text-muted-foreground">₹20,250</td>
+                      <td className="px-4 py-3 font-semibold text-golden">₹13,500</td>
+                      <td className="px-4 py-3 text-basil font-medium">₹6,750</td>
+                    </tr>
+
                   </tbody>
                 </table>
               </div>
@@ -569,7 +594,7 @@ export default function WholesaleZone() {
                       aria-invalid={!!errors.termsAccepted}
                     />
                     <label htmlFor="termsAccepted" className="text-sm text-brown">
-                      I agree to the <span className="text-golden font-medium">terms and conditions</span> and 
+                      I agree to the <span className="text-golden font-medium">terms and conditions</span> and
                       <span className="text-golden font-medium"> privacy policy</span> *
                     </label>
                   </div>
@@ -595,7 +620,7 @@ export default function WholesaleZone() {
                   Application Received!
                 </h3>
                 <p className="text-muted-foreground mb-6">
-                  Thank you for your interest in partnering with Macronica. Our partnership team will review your 
+                  Thank you for your interest in partnering with Macronica. Our partnership team will review your
                   application and contact you within 24 hours to discuss pasta wholesale opportunities.
                 </p>
                 <div className="space-y-3">

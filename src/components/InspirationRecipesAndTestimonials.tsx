@@ -96,7 +96,7 @@ const mockTestimonials: Testimonial[] = [
     role: "Grocery Store Owner",
     location: "Mumbai, Maharashtra",
     message: "My customers love the quality of Macronica pasta and my margins are excellent. It has become our bestselling pasta brand!",
-    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face"
+    avatar: "https://plus.unsplash.com/premium_photo-1689539137236-b68e436248de?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     id: "2", 
@@ -104,7 +104,7 @@ const mockTestimonials: Testimonial[] = [
     role: "Home Cook",
     location: "Delhi, NCR",
     message: "Perfect texture every time I cook it. My family can taste the difference in quality - worth every rupee spent.",
-    avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b77c?w=100&h=100&fit=crop&crop=face"
+    avatar: "https://media.istockphoto.com/id/678420912/photo/portrait-of-an-indian-lady-teacher.jpg?s=2048x2048&w=is&k=20&c=DX5L4J6Et8RR5DCQ7LPU0vK64w_w_ERZd3T7QnHulm8="
   },
   {
     id: "3",
@@ -112,7 +112,7 @@ const mockTestimonials: Testimonial[] = [
     role: "Restaurant Owner", 
     location: "Hyderabad, Telangana",
     message: "Consistent quality for our restaurant dishes. Customers regularly compliment our pasta preparations.",
-    avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face"
+    avatar: "https://images.unsplash.com/photo-1667104445036-a3bd1c8333f5?q=80&w=580&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     id: "4",
