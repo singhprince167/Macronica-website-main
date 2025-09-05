@@ -1,21 +1,21 @@
 import { FlatCompat } from '@eslint/eslintrc'
- 
+
 const compat = new FlatCompat({
-  // import.meta.dirname is available after Node.js v20.11.0
   baseDirectory: import.meta.dirname,
 })
- 
+
 const eslintConfig = [
   ...compat.config({
     extends: ['next'],
-    plugins: ['import'],
+    plugins: ['import', '@typescript-eslint'], // ✅ add plugin here
   }),
   {
     rules: {
       'react/no-unescaped-entities': 'off',
       '@next/next/no-img-element': 'off',
       '@typescript-eslint/no-unused-vars': 'off',
-      '@typescript-eslint/no-explicit-any': 'off',
+      '@typescript-eslint/no-explicit-any': 'off', // ✅ now ESLint can find it
+
       'react-hooks/exhaustive-deps': 'off',
       'import/no-unresolved': 'error',
       'import/named': 'error',
@@ -29,5 +29,5 @@ const eslintConfig = [
     },
   },
 ]
- 
+
 export default eslintConfig

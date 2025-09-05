@@ -141,7 +141,7 @@ export default function InspirationRecipesAndTestimonials() {
   });
 
   const carouselRef = useRef<HTMLDivElement>(null);
-  const autoPlayRef = useRef<NodeJS.Timeout>();
+  const autoPlayRef = useRef<NodeJS.Timeout>(null);
 
   // Auto-advance testimonials
   useEffect(() => {
