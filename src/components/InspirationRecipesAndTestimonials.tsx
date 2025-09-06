@@ -120,7 +120,7 @@ const mockTestimonials: Testimonial[] = [
     role: "Homemaker",
     location: "Kochi, Kerala", 
     message: "Easy to cook and my children love the taste. Great value for money compared to other pasta brands.",
-    avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face"
+    avatar: "https://media.istockphoto.com/id/1205299877/photo/portrait-of-confident-woman-in-sari.jpg?s=2048x2048&w=is&k=20&c=EMBVt0NySEOzjxXr2uDvF5FQQji3bNGB84YMNf9Y34w="
   }
 ];
 
